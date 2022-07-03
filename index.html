@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>nootris</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="wrapp">
+          <a class="header__logo" href="#">
+            <img
+              class="header__logo_img"
+              src="./img/logo.svg"
+              alt="Логотип компании"
+            />
+          </a>
+          <div class="header__nav-contact">
+            <nav class="header__nav">
+              <a class="header__nav_item link" href="#">FAQ</a>
+              <a class="header__nav_item link" href="#">Оплата и доставка</a>
+              <a class="header__nav_item link" href="#">Возврат</a>
+              <a class="header__nav_item link" href="#">Исследования</a>
+              <a class="header__nav_item link" href="#">Личный кабинет</a>
+            </nav>
+
+            <a
+              class="header__contact link"
+              href="tel:+78006000990"
+              title="Позвонить на телефон"
+              >8 (800) 600-09-90</a
+            >
+          </div>
+
+          <div class="cart-menu">
+            <a class="header__cart" href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="28"
+                viewBox="0 0 32 28"
+                fill="none"
+              >
+                <path
+                  d="M32 9.99998H26.5662L20.8575 0.485351C20.5743 0.012716 19.96 -0.141597 19.4854 0.142589C19.0118 0.426776 18.8585 1.041 19.1427 1.51464L24.2338 9.99998H7.76622L12.8574 1.51458C13.1416 1.04093 12.9883 0.426709 12.5147 0.142522C12.0391 -0.141665 11.4268 0.0126487 11.1426 0.485283L5.43389 9.99992H0V11.9999H2.17042L4.71093 25.5517C4.97653 26.9707 6.21676 28 7.66018 28H24.3399C25.7832 28 27.0235 26.9707 27.2881 25.5527L29.8295 11.9999H32.0001C32 11.9999 32 9.99998 32 9.99998ZM25.3222 25.1846C25.2344 25.6572 24.8213 26 24.3398 26H7.66018C7.17873 26 6.76568 25.6573 6.67681 25.1836L4.20463 11.9999H27.7954L25.3222 25.1846Z"
+                  fill="white"
+                />
+              </svg>
+              <div class="header__cart_badge">1</div>
+            </a>
+
+            <div class="header__menu-mobile menu-mobile">
+              <button class="menu-mobile__btn" id="btnOpen">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                >
+                  <path
+                    d="M0 20H24V16.6667H0V20ZM0 11.6667H24V8.33333H0V11.6667ZM0 0V3.33333H24V0H0Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+
+              <button class="menu-mobile__btn d-none" id="btnClose">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6055 0.394489C15.0848 -0.126174 14.2327 -0.134112 13.7121 0.386551L7.99994 6.09865L2.28793 0.386677C1.76726 -0.133986 0.915158 -0.126049 0.394491 0.394614C-0.126175 0.915277 -0.134113 1.76738 0.386554 2.28804L6.09856 8.00001L0.386573 13.712C-0.134093 14.2326 -0.126156 15.0847 0.394511 15.6054C0.915177 16.1261 1.76728 16.134 2.28795 15.6133L7.99994 9.90137L13.7121 15.6134C14.2327 16.1341 15.0848 16.1262 15.6055 15.6055C16.1262 15.0848 16.1341 14.2328 15.6134 13.7121L9.90131 8.00001L15.6134 2.28791C16.1341 1.76725 16.1262 0.915152 15.6055 0.394489Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="menu-mobile__items d-none" id="mobileMenu">
+                <nav class="menu-mobile__items_nav mobile-nav">
+                  <a class="mobile-nav_item link">FAQ</a>
+                  <a class="mobile-nav_item link">Оплата и доставка</a>
+                  <a class="mobile-nav_item link">Возврат</a>
+                  <a class="mobile-nav_item link">Исследования</a>
+                  <a class="mobile-nav_item link">Личный кабинет</a>
+                </nav>
+                <a
+                  class="link menu-mobile__items_phone"
+                  href="tel:+78006000990"
+                  title="Позвонить на телефон"
+                  >8 (800) 600-09-90</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="first-screen">
+        <div class="container">
+          <article class="main-text">
+            <h1 class="main-text__title">АКТИВИРУЙ ИММУНИТЕТ!</h1>
+            <p class="main-text__description">
+              Всего пять секунд в день помогут укрепить иммунитет и повысить
+              защитные силы организма
+            </p>
+          </article>
+
+          <article class="additional-text">
+            <h3 class="additional-text__title">NOOTRIS ПОМОГАЕТ</h3>
+            <p class="additional-text__description">
+              Вашему организму во время пандемии и сезонных простуд
+            </p>
+          </article>
+          <img
+            class="first-screen__img"
+            src="./img/first-screen-img.png"
+            alt="nootris"
+          />
+        </div>
+      </section>
+      <section class="order-block">
+        <div class="container">
+          <h2 class="order-block__title">
+            Получи защиту иммунитета
+            <br />
+            <span class="order-block__title_color">
+              со скидкой -15% первым!
+            </span>
+          </h2>
+          <div class="order-block__discount">
+            <span class="order-block__discount_before">750₽</span>
+            <span class="order-block__discount_curent">690₽</span>
+          </div>
+          <div class="order-block__benefits benefits">
+            <article class="benefits__item">
+              <img
+                class="benefits__item_img img-ginger"
+                src="./img/ginger.png"
+                alt=""
+              />
+              <p class="benefits__item_text">
+                Содержит
+                <br />
+                <span>имбирь</span>
+              </p>
+            </article>
+            <article class="benefits__item center-item">
+              <img
+                class="benefits__item_img img-nootris"
+                src="./img/nootris.png"
+                alt=""
+              />
+              <p class="benefits__item_text">
+                + Бесплатная доставка
+                <br />
+                <span>Специальная цена</span>
+              </p>
+            </article>
+            <article class="benefits__item">
+              <img
+                class="benefits__item_img img-virus"
+                src="./img/vorus.png"
+                alt=""
+              />
+              <p class="benefits__item_text">
+                Нейтрализует
+                <br />
+                <span>вирусы</span>
+              </p>
+            </article>
+          </div>
+          <button class="btn order-block-btn">Оформить заказ!</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
